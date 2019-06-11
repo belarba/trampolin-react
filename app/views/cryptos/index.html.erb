@@ -1,0 +1,12 @@
+<ul>
+  <% @valores.each do |valor| %>
+    <li>
+      <%= valor.name %>
+      R$ <%= valor.value %>
+    </li>
+  <% end %>
+</ul>
+
+<form action="/crypto_update" method="patch">
+  <input type="submit" value="Atualizeee">
+</form>
